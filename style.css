@@ -1,14 +1,43 @@
 /* layout 共通寫法 */
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
     box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
-    /* 字體待處理 */
 }
 
 body {
     color: white
+}
+
+.hidden {
+    display: none;
+}
+
+/* 顏色 */
+
+.text-blue {
+    color: rgba(53, 191, 225);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-gray {
+    color: #b9b9b9;
+}
+
+/* 字體 */
+
+.text-title {
+    font-size: 70px;
+}
+
+.text-h1 {
+    font-size: 40px;
+}
+
+.text-h2 {
+    font-size: 20px;
 }
 
 .floatfix {
@@ -17,14 +46,16 @@ body {
 
 .navbar-container {
     position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 76px;
     background-color: rgba(74, 74, 74, 0.5)
 }
 
 .navbar {
-    margin: 0 auto;
     padding: 20px;
+    margin: 0 auto;
     width: 980px;
     height: 76px;
 }
@@ -133,12 +164,191 @@ body {
     background-size: 20px;
 }
 
-/* 非共同區塊 */
+/* 非共同區塊 banner */
 
 .header-container {
+    padding: 230px;
     width: 100%;
     height: 560px;
     background-image: url("./image/banner.jpg");
     background-repeat: none;
-    background-size: cover
+    background-size: cover;
 }
+
+/* 不知道如何定位 */
+
+.header {
+    width: 980px;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.header-button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(53, 191, 225);
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    transition: all 0.4s;
+}
+
+button:hover {
+    background-color: rgb(43, 154, 182);
+}
+
+.header-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 非共同區塊 banner 結束 */
+
+/* 內容「基礎課程」區塊 開始 */
+
+.content {
+    padding: 40px 20px;
+    color: #b9b9b9;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.box ul {
+    margin-top: 40px;
+}
+
+.box li {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: -1px 3px 10px #b9b9b9;
+}
+
+.box div {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+}
+
+.box-title {
+    text-align: center;
+    color: black
+}
+
+.box-content {
+    text-align: left;
+    font-size: 17;
+    font-weight: bold;
+    color: #b9b9b9;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content_class1 {
+    background-image: url("./image/content_class1.jpg");
+    background-repeat: none;
+    background-size: 100% 100%;
+}
+
+.content_class2 {
+    background-image: url("./image/content_class2.jpg");
+    background-repeat: none;
+    background-size: 100% 100%;
+}
+
+.content_class3 {
+    background-image: url("./image/content_class3.jpg");
+    background-repeat: none;
+    background-size: 100% 100%;
+}
+
+/* 內容「基礎課程」區塊 結束 */
+
+/* 內容「表格」區塊 開始 */
+
+.content-table {
+    margin-top: 40px;
+    color: black;
+}
+
+.content-table table {
+    width: 900px;
+}
+
+.content-table td,
+.content-table th {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.content-table th {
+    padding: 20px 40px;
+    background: #ebebeb;
+    text-align: center;
+}
+
+.content-table td {
+    padding: 20px 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* 內容「表格」區塊 結束 */
+
+/* 內容「留言」區塊 開始 */
+
+.content-leaveinfo-container {
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.content-leaveinfo {
+    padding: 50px;
+    font-size: 35px;
+    color: black;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.content-leaveinfo-box {
+    float: left;
+    width: 50%;
+}
+
+.content-leaveinfo-box p {
+    line-height: 60px;
+}
+
+.content-leaveinfo-box-info {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}
+
+.content-leaveinfo-box-subbutton {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(53, 191, 225);
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.content-leaveinfo-box-subbutton:hover {
+    background-color: rgb(43, 154, 182);
+    cursor: pointer;
+}
+
+/* 內容「留言」區塊 結束 */
